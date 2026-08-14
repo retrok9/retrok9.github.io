@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>RETRO K9</title>
+    <link rel="stylesheet" type="text/css" href="example.css">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="shortcut icon" href="../images/icon.png">
+</head>
+
+
+
+<body>
+
+<div class="mainlogo">
+
+    <img src="../images/animlogo.gif">
+
+</div>
+
+<div class="centered-box">
+
+    <!-- Left -->
+    <div class="debris" style="left: 55%">
+        <div class="debrisContainer" style="--depth: 1">
+            <img class="random-debris">
+        </div>
+
+        <div class="debrisContainer" style="--depth: 2">
+            <img class="random-debris">
+        </div>
+
+        <div class="debrisContainer" style="--depth: 3">
+            <img class="random-debris">
+        </div>
+
+        <div class="debrisContainer" style="--depth: 4">
+            <img class="random-debris">
+        </div>
+    </div>
+
+    <!-- Right -->
+    <div class="debris" style="right: 55%">
+        <div class="debrisContainer" style="--depth: 4">
+            <img class="random-debris">
+        </div>
+
+        <div class="debrisContainer" style="--depth: 3">
+            <img class="random-debris">
+        </div>
+
+        <div class="debrisContainer" style="--depth: 2">
+            <img class="random-debris">
+        </div>
+
+        <div class="debrisContainer" style="--depth: 1">
+            <img class="random-debris">
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const debrisImg = [
+        "../images/cone.png",
+        "../images/consign.png",
+        "../images/conbarricade.png"
+    ]
+
+    const debris = document.querySelectorAll(".random-debris");
+
+    debris.forEach(img => {
+        const randomImg = Math.floor(Math.random() * debrisImg.length);
+        img.src = debrisImg[randomImg];
+    });
+</script>
+    
+
+</body>
+
+</html>
