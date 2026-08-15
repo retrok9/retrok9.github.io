@@ -1,0 +1,47 @@
+body {
+  background-image: url("../images/tile.png");
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+.mainlogo {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.mainlogo img {
+  width: 445px;
+  height: auto;
+}
+
+.centered-box {
+    position: relative;
+}
+
+.debris {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.debrisContainer {
+    width: 120px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(calc(var(--depth) * var(--depth) * 20px));
+}
+
+.debrisContainer img {
+    object-fit: contain;
+
+    transform: scale(calc(0.25 + var(--depth) * 0.25));
+}
