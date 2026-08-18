@@ -45,3 +45,13 @@ a {
 
     transform: scale(calc(0.25 + var(--depth) * 0.25));
 }
+
+.left {
+    position: absolute;
+    left: 100px;
+}
+
+.left img {
+    width: 600px;
+    height: auto;
+}
